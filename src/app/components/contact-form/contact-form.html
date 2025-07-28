@@ -1,0 +1,16 @@
+<div class="container mt-4">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="row g-3">
+        <div class="col-md-4">
+            <input class="form-control" formControlName="name" placeholder="Name" />
+        </div>
+        <div class="col-md-4">
+            <input class="form-control" formControlName="email" placeholder="Email" />
+        </div>
+        <div class="col-md-4">
+            <input class="form-control" formControlName="phone" placeholder="Phone" />
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">{{ isEditing ? 'Update' : 'Create' }}</button>
+        </div>
+    </form>
+</div>
